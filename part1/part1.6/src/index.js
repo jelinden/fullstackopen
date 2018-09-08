@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import PropTypes from "prop-types";
 
 class App extends React.Component {
     constructor(props) {
@@ -56,17 +55,5 @@ const Statistiikka = props => {
         </div>
     );
 };
-
-App.propTypes = {
-    counter: PropTypes.object
-};
-
-// App.defaultProps = {
-//     counter: {
-//         good: 0,
-//         neutral: 0,
-//         bad: 0
-//     }
-// };
 
 ReactDOM.render(<App />, document.getElementById("root"));
