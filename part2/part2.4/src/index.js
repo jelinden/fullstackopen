@@ -45,7 +45,7 @@ const App = () => {
     return (
         <div>
             {kurssit.map(kurssi => {
-                return <Kurssi kurssi={kurssi} />;
+                return <Kurssi key={kurssi.id} kurssi={kurssi} />;
             })}
         </div>
     );
