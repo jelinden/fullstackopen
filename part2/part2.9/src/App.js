@@ -52,7 +52,7 @@ class App extends React.Component {
     }
 
     setFilter(event) {
-        this.setState({ filter: event.target.value });
+        this.setState({ filter: event.target.value.toLowerCase() });
     }
 
     nameExists(value) {
@@ -88,7 +88,7 @@ class App extends React.Component {
                 </form>
 
                 <h2>Numerot</h2>
-                {this.state.persons.filter(item => item.name.includes(this.state.filter)).map((p, i) => {
+                {this.state.persons.filter(item => item.name.toLowerCase().includes(this.state.filter)).map((p, i) => {
                     return (
                         <div key={i}>
                             <div style={name}>{p.name}</div>
