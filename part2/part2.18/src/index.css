@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  margin-left: 5px;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#info {
+  padding: 10px;
+  background-color: lightgreen;
+  margin-bottom: 5px;
+  max-width: 200px;
+}
